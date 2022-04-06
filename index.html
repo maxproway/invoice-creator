@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Invoice Creator</title>
+    </head>
+    <body>
+        <app class="app">
+            <header class="header">
+                <h1 class="title">Invoice creator</h1>
+                <p class="subtitle">Thanks for choosing GoodCorp, LLC!</p>
+            </header>
+            <main>
+                <ul class="services-list">
+                    <li id="wash-car" class="service-item" onclick="addService(this)">Wash Car: $10</li>
+                    <li id="mow-lown" class="service-item" onclick="addService(this)">Mow Lawn: $20</li>
+                    <li id="pull-weeds" class="service-item" onclick="addService(this)">Pull Weeds: $30</li>
+                </ul>
+                <div class="invoice-title">
+                    <div class="invoice-task">TASK</div>
+                    <div class="invoice-total">TOTAL</div>
+                </div>
+
+                <div id="invoice-services"></div>
+                <hr />
+                <div class="invoice-footer">
+                    <div class="invoice-notes">NOTES</div>
+                    <div class="invoice-amount">TOTAL AMOUNT</div>
+                </div>
+                <div id="total-invoice" class="total-invoice">
+                    <div class="total-invoice-notes">We accept cash, credit card, or PayPal</div>
+                    <div id="total-invoice-cost" class="total-invoice-cost"></div>
+                </div>
+                <a href="#" id="invoice-btn" class="invoice-btn" onclick="sendInvoice()">Send Invoice</a>
+            </main>
+        </app>
+        <script src="./script.js"></script>
+    </body>
+</html>

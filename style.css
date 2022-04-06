@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.app {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    min-height: 720px;
+}
+
+.header {
+    background-color: #3a69d2;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+main {
+    background-color: #1f2937;
+    padding: 38px;
+    min-height: 530px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.service-item {
+    color: #4a4e74;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background: #d1d4f4;
+    border-radius: 7px;
+    padding: 1em 1.3em;
+    cursor: pointer;
+}
+
+.service-item:hover,
+.service-item:focus {
+    outline: 2px solid #fff;
+}
+
+.service-item-active {
+    outline: 2px solid #fff;
+    cursor: inherit;
+}
+
+.invoice-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #d5d4d8;
+    margin-top: 43px;
+    margin-bottom: 16px;
+}
+
+hr {
+    border: 0.5px solid #c3c6db;
+    margin-top: 27px;
+}
+
+.invoice-footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 32px;
+    color: #d5d4d8;
+    margin-top: 11px;
+}
+
+.invoice-btn {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    background: #3a69d2;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px 0 10px 28px;
+    margin-top: 63px;
+    position: relative;
+}
+
+.invoice-btn::before {
+    position: absolute;
+    content: "";
+    background-image: url(/img/mail-icon.svg);
+    width: 16px;
+    height: 12px;
+    transform: translateX(-100%) translateX(-12px) translateY(50%);
+}
+
+.added-service {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.added-service-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #f5f5f5;
+}
+
+.added-service-title span {
+    font-weight: 400;
+    font-size: 0.5em;
+    line-height: 20px;
+    color: rgb(211, 65, 65);
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.added-service-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.added-service-price span {
+    color: #918e9b;
+}
+
+.total-invoice {
+    display: none;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+
+.total-invoice-notes {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #f5f5f5;
+}
+
+.total-invoice-cost {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+    text-align: right;
+    color: #f5f5f5;
+}
